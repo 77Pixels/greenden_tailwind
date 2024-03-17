@@ -12,6 +12,7 @@
     >
       <h1 class="text-3xl">Greenden</h1>
       <svg
+        id="menu-icon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -38,6 +39,28 @@
         </li>
       </ul>
     </nav>
+
+    <!-- side navbar -->
+    <section
+      id="side-nav"
+      class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <div class="text-right p-5">
+        <p id="close-nav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col items-center gap-10 text-gray-600">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+      </ul>
+    </section>
 
     <!-- Spotlight Section -->
     <section class="p-5 bg-green-100 flex justify-center">
@@ -236,5 +259,6 @@
       </p>
       <p>&copy; 2024 Greenden.com</p>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
